@@ -96,7 +96,7 @@
 </head>
 <body>
     <div class="demo-banner">
-        🔴 SECURITY RESEARCH PoC - This demonstrates clickjacking vulnerability on https://confluxhub.io/
+        🔴 SECURITY RESEARCH PoC - This demonstrates clickjacking vulnerability on https://app.bullbit.ai/
     </div>
 
     <div class="container">
@@ -104,7 +104,7 @@
             <!-- The legitimate fullsail finance site -->
             <iframe 
                 id="legitimateIframe"
-                src="https://confluxhub.io/"
+                src="https://app.bullbit.ai/"
                 sandbox="allow-scripts allow-same-origin"
             ></iframe>
 
@@ -138,7 +138,7 @@
 
         iframe.addEventListener('error', () => {
             console.error('❌ Failed to load - Site may have X-Frame-Options protection');
-            alert('The target site could not be loaded. This might mean they already have clickjacking protection enabled (X-Frame-Options or CSP frame-ancestors).');
+            alert('The target site could not be loaded. This might mean they al have clickjacking protection enabled (X-Frame-Options or CSP frame-ancestors).');
         });
     </script>
 </body>
